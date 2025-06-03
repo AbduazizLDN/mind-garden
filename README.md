@@ -15,5 +15,6 @@ This project was developed to:
 - Practice front-end web development using modern **HTML** and **CSS** techniques and frameworks like Bootstrap.
 - Apply UX and accessibility principles.
 
-
+## Ai Utilisation 
+- Created a Nav bar and used Ai to help format it better
 
