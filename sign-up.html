@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Mind Garden</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="signstyle.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="bg-light border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand fw-bold" href="#">Mind Garden</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="mind-garden.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="mind-garden.html#topics">Topics</a></li>
+                <li class="nav-item"><a class="nav-link" href="mind-garden.html#tips">Coping Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="mind-garden.html#resources">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Sign-Up Form -->
+<div class="signup-container">
+    <h2>Sign Up</h2>
+    <form onsubmit="return validatePassword()">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <p id="error-message" class="error">Passwords do not match!</p>
+        <button type="submit">Create Account</button>
+    </form>
+</div>
+
+<script>
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var errorMessage = document.getElementById("error-message");
+
+        if (password !== confirmPassword) {
+            errorMessage.style.display = "block";
+            return false;
+        } else {
+            errorMessage.style.display = "none";
+            return true;
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

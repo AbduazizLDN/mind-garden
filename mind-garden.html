@@ -4,27 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mind Garden</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon_io/favicon.ico">
+
+    <!-- Stylesheet Links -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Bootstrap Links-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="topic-bg">
       <!-- Navigation -->
   <header class="bg-light border-bottom sticky-top">
-    <nav class="navbar navbar-expand-lg container">
-      <a class="navbar-brand fw-bold" href="#">MindSpace</a>
+    <nav class="nav-bg navbar navbar-expand-lg container">
+      <a class="main-font navbar-brand fw-bold" href="#">Mind Garden</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tips">Coping Tips</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class=" main-font nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class=" main-font nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+          <li class=" main-font nav-item"><a class="nav-link" href="#tips">Coping Tips</a></li>
+          <li class=" main-font nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+            <li class=" main-font nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
+    <!-- Hero Section -->
+  <section class="hero-background text-center bg-white" id="about">
+    <div class="container" data-aos="fade-down">
+      <h1 class="hero-text main-font display-5 fw-bold">Mind Garden</h1>
+      <p class="hero-subtext second-font lead">Learn about mental health, understand how to cope, and find supportive resources — all in one place.</p>
+    </div>
+  </section>
+
+  <!-- Topics Section -->
+ <div class="topic-bg container">
+<div class="row"> 
+    <div class="col-md-4" data-aos="zoom-in">
+  <div class="topic1 p-3 h-100">
+    <h4 class=" card-title">Anxiety</h4>
+    <p class=" card-text">Understand symptoms and how to manage them.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#anxietyModal">Learn More</button>
+  </div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="topic2 p-3 h-100">
+    <h4 class="card-title">Depression</h4>
+    <p class="card-text">Learn about signs and how to seek support.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#depressionModal">Learn More</button>
+  </div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+  <div class="topic3 p-3 h-100">
+    <h4 class="card-title">Stress</h4>
+    <p class="card-text">Discover how stress affects you and how to reduce it.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#stressModal">Learn More</button>
+  </div>
+</div>
+ </div>
+
+ <div class="row">
+
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+  <div class="topic4 p-3 h-100">
+    <h4 class="card-title">Sleep and Mental Health</h4>
+    <p class="card-text">Explore how sleep impacts emotional wellbeing.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sleepModal">Learn More</button>
+  </div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+  <div class="topic5 p-3 h-100">
+    <h4 class="card-title">Nutrition and Mood</h4>
+    <p class="card-text">Understand how diet influences mental health.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#nutritionModal">Learn More</button>
+  </div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+  <div class="topic6 p-3 h-100">
+    <h4 class="card-title">Mindfulness</h4>
+    <p class="card-text">Learn how being present can reduce anxiety.</p>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mindfulnessModal">Learn More</button>
+  </div>
+</div>
+ </div>
+
+ </div>
+<!-- Modals -->
+  <div class="modal fade" id="anxietyModal" tabindex="-1" aria-labelledby="anxietyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="topic1 modal-header">
+          <h5 class="modal-title" id="anxietyModalLabel">Understanding Anxiety</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="topic1 modal-body">
+          Anxiety is a common emotional response to stress. It can manifest as restlessness, rapid heartbeat, or excessive worrying. Practicing mindfulness, breathing exercises, and seeking support can help manage anxiety.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="depressionModal" tabindex="-1" aria-labelledby="depressionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="topic2 modal-header">
+          <h5 class="modal-title" id="depressionModalLabel">Understanding Depression</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="topic2 modal-body">
+          Depression involves prolonged feelings of sadness or hopelessness. It affects daily functioning and may require support from professionals, medication, or therapy. You're not alone — support is available.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="stressModal" tabindex="-1" aria-labelledby="stressModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="topic3 modal-header">
+          <h5 class="modal-title" id="stressModalLabel">Understanding Stress</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="topic3 modal-body">
+          Stress is the body’s reaction to challenges. While short-term stress can be helpful, chronic stress can be harmful. Managing stress with time management, exercise, and relaxation can improve wellbeing.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sleep Modal -->
+<div class="modal fade" id="sleepModal" tabindex="-1" aria-labelledby="sleepModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="topic4 modal-title" id="sleepModalLabel">Sleep and Mental Health</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="topic4 modal-body">
+        Sleep is crucial for emotional regulation and cognitive function. Poor sleep can increase stress, anxiety, and depression. A regular bedtime routine, limiting screens, and relaxation techniques can improve sleep quality.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nutrition Modal -->
+<div class="modal fade" id="nutritionModal" tabindex="-1" aria-labelledby="nutritionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="topic5 modal-header">
+        <h5 class="modal-title" id="nutritionModalLabel">Nutrition and Mood</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="topic5 modal-body">
+        The food you eat can impact your mental state. Nutrient-rich foods support brain health, while processed and sugary foods may worsen mood. Eating balanced meals and staying hydrated can boost mental clarity and stability.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mindfulness Modal -->
+<div class="modal fade" id="mindfulnessModal" tabindex="-1" aria-labelledby="mindfulnessModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="topic6 modal-header">
+        <h5 class="modal-title" id="mindfulnessModalLabel">Mindfulness</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="topic6 modal-body">
+        Mindfulness is the practice of being fully present. It can reduce anxiety and improve focus. Regular mindfulness exercises like deep breathing or body scans can promote emotional balance and self-awareness.
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Resources Section -->
+  <section id="resources" class="topic-bg1 bg-light">
+    <div class="container topic-bg1" data-aos="fade-up">
+      <h2 class="mb-4 text-center">Helpful Resources</h2>
+      <div class="d-flex flex-column gap-3">
+        <a href="https://www.mind.org.uk/" class="btn btn-calm" target="_blank" rel="noopener">Mind (UK Mental Health Charity)</a>
+        <a href="https://www.nhs.uk/mental-health/" class="btn btn-calm" target="_blank" rel="noopener">NHS Mental Health Support</a>
+        <a href="https://www.samaritans.org/" class="btn btn-calm" target="_blank" rel="noopener">Samaritans (24/7 Listening Support)</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="text-center py-4 bg-white border-top">
+    <small>&copy; 2025 Mind Garden. Built to promote mental health awareness.</small>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
